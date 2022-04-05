@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '5c1dfc84-2b3c-4d72-9e8d-67a971ad175a'
   imageRepository: 'sampsamp1'
   containerRegistry: 'sampplus.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/azure-aks-kubernetes-masterclass/blob/master/19-Azure-DevOps-with-AKS/19-01-Azure-DevOps-BuildandPush-to-ACR/Git-Repository-files/Dockerfile'
+  dockerfilePath: '**/azure-aks-kubernetes-masterclass/blob/master/19-Azure-DevOps-with-AKS/19-01-Azure-DevOps-BuildandPush-to-ACR/Git-Repository-files/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
