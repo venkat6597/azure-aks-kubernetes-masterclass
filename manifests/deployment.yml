@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sampdock 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sampdock
+  template:
+    metadata:
+      labels:
+        app: sampdock 
+    spec:
+      containers:
+        - name: sampdock 
+          image: sampacrr.azurecr.io/sampdock
+          ports:
+          - containerPort: 80
